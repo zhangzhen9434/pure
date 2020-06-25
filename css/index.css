@@ -44,3 +44,8 @@ body{
     background:rgba(45,53,97,0.5);
     transition-duration: 300ms;
 }
+.ko{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
