@@ -7,6 +7,7 @@
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
 <link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css">
 <img src="images/wallhaven.jpg">
+<script src="js/sy.js"></script>
 <title>Pure</title>
 </head>
 <body >
@@ -36,11 +37,11 @@
 	<!--搜索框-->
 <div class="btnbg">
 			<div class="col-md-6 col-sm-7 col-md-push-3 col-sm-push-2 " style="opacity: 0.6; padding: 31px;">
-				<form action="https://www.baidu.com/s?wd=" target="_blank">
+				<form onsubmit="return search()">
 					<div class="input-group input-group-lg ">
-					  <input type="text" class="form-control" name="q" placeholder="Everything for pure">
+					  <input type="text" class="form-control" id="search_input" placeholder="Everything for pure">
 					  <span class="input-group-btn">
-						<button class="btn btn-default blue" type="button submit">Sreach</button>
+						<button class="btn btn-default blue" onclick="return search()">Sreach</button>
 					  </span>
 					</div>
 				</form>
