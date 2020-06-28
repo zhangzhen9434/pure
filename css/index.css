@@ -2,9 +2,12 @@ body {
     padding:0;
     margin:0;
     overflow:hidden;
-	height: 100%;
-	position: relative ;
+	  height: 100%;
+	  position: relative ;
 }
+
+}
+
 canvas {
     padding:0;
     margin:0;
@@ -19,4 +22,81 @@ div.btnbg {
 }
 @media all and (min-width:769px){
 	div.btnbg{margin-top: 0;}
+}
+
+.btn{
+    padding-right: 80px;
+    padding-left: 30px;
+    border-radius: 0;
+    color:#fff;
+    text-transform: uppercase;
+    background: #580141;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+.btn:before{
+    content: "";
+    width: 33%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: -5px 0 0 -5px;
+    transform: rotate(-20deg);
+    transform-origin: 0 0 0;
+    transition: all 0.3s ease 0s;
+    z-index: 1;
+}
+.btn:after{
+    font-family: 'FontAwesome';
+    position: absolute;
+    top:25%;
+    right: 13%;
+    display: block;
+}
+.btn:hover:before{
+    width: 40%;
+}
+.btn:hover{
+    color:#fff;
+}
+.btn.purple:before,
+.btn.green:before,
+.btn.orange:before,
+.btn.blue:before{
+    background: rgba(255, 255, 255, 0.1);
+}
+.btn.purple:hover{
+    background: #55023F ;
+}
+.btn.green{
+    background: #396b1c;
+}
+.btn.green:hover{
+    background: #355920;
+}
+.btn.orange{
+    background: #e67e22;
+}
+.btn.orange:hover{
+    background: #cd7223;
+}
+.btn.blue{
+    background: #0e83cd;
+}
+.btn.blue:hover{
+    background: #0c68a2;
+}
+
+.quote-content {
+    color: rgba(255,255,255,.9);
+    text-shadow: 0 0 20px rgba(0,0,0,.8);
+    transition: all .25s
+}
+
+.quote-author {
+    opacity: 0;
+    color: var(--b-alpha-90);
+    transition: all .25s
 }
