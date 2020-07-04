@@ -4,6 +4,6 @@
 
 个人食用Demo：
 
-[🎉 Pure Search]:http://typefun.nat300.top/pure/index.html
+[http://typefun.nat300.top/pure/]:🎉 Pure Search
 
 保持新思维，持续跟进，code共享，世界和平。
